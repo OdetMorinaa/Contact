@@ -3,43 +3,84 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+/* Body font and box-sizing */
+body {
+  font-family: 'Merienda', cursive; /* Handwriting font */
+  margin: 0;
+  padding: 0;
+  background-color: #f7e9d1; /* Warm beige background */
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Form input styles */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #7b6c5e; /* Dark brown border */
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 16px;
+  background-color: #f0e3d1; /* Light beige input background */
+}
+
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+  border-color: #af9972; /* Light brown border on focus */
+}
+
+/* Submit button styles */
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #8f6552; /* Dark peach button */
   color: white;
-  padding: 12px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #bb7f62; /* Lighter peach on hover */
 }
 
+/* Container styling */
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  border-radius: 12px;
+  background-color: #f0e3d1; /* Light beige container background */
+  padding: 30px;
+  max-width: 500px; /* Limiting width */
+  margin: 50px auto; /* Centering the container */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Soft shadow */
+  margin-top: 250px;
 }
+
+/* Heading style */
+h1 {
+  color: #7b6c5e; /* Dark brown heading color */
+  text-align: center;
+}
+
+/* Paragraph style */
+p {
+  color: #6f725b; /* Olive green text color */
+  line-height: 1.6;
+}
+
+
+
 </style>
 </head>
 <body>
 
-<h3>Contact Form</h3>
 
 <div class="container">
 	<form
